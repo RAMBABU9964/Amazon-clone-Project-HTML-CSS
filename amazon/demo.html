@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http:slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http:slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<style>
+  .img_main{
+    height: 500px;
+
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <img src="../amazon/box5_image.jpg" alt="Image 1" class="img_main">
+  <img src="../amazon/box6_image.jpg" alt="Image 1" class="img_main">
+  <img src="../amazon/box7_image.jpg" alt="Image 1" class="img_main">
+  <img src="../amazon/box8_image.jpg" alt="Image 1" class="img_main">
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- <script type="text/javascript" src="http:slick/slick.min.js"></script> -->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.gallery').slick({
+    infinite: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         arrows:true,
+  });
+});
+</script>
+
+</body>
+</html>
